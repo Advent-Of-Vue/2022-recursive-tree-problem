@@ -7,13 +7,13 @@
   </div>
 </template>
 
-<script setup lang="ts">
-withDefaults(
-  defineProps<{
-    size: number
-  }>(),
-  {
-    size: 1,
+<script setup>
+import { defineProps } from 'vue';
+
+const props = defineProps({
+  size: {
+    type: Number,
+    default: 1
   }
-)
+})
 </script>
